@@ -10,38 +10,14 @@
 import UIKit
 import MapKit
 
+class MapAppleViewController: MapViewController {
 
-class MapAppleViewController: BaseViewController {
-    
-    
-    @IBOutlet weak var mapView: MKMapView!
-    
-    @IBOutlet var locationDataProvider: LocationDataProvider!
-    
-    
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        self.locationDataProvider.request()
-    }
-    
-    // MARK: - Action
-    @IBAction func locationDataProviderAction(_ sender: LocationDataProvider) {
+        self.mapView.delegate = self
         
-        guard let coord = sender.coordinate else{
-            return
-        }
-        self.showMyRegion(currentLocation: coord)
     }
-    
-    // MARK: - Private
-    
-    func showMyRegion(currentLocation:CLLocationCoordinate2D){
-        let span = MKCoordinateSpan(latitudeDelta: 0.005, longitudeDelta: 0.005)
-        let region = MKCoordinateRegion(center: currentLocation, span: span)
-        self.mapView.setRegion(region, animated: true)
-    }
-    
 }
 
 extension MapAppleViewController
@@ -50,3 +26,5 @@ extension MapAppleViewController
         return self.controllerFromStoryboard(controllerClass: self, from: .MapApple)
     }
 }
+
+

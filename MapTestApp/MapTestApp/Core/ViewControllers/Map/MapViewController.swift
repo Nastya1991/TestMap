@@ -7,18 +7,44 @@
 //
 
 import UIKit
+import MapKit
 
 class MapViewController: BaseViewController {
+    
+    @IBOutlet weak var mapView: MKMapView!
+    @IBOutlet weak var infoLabel: UILabel!
+    @IBOutlet var locationDataProvider: LocationDataProvider!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        guard self.locationDataProvider != nil else {
+            return
+        }
+        self.locationDataProvider.request()
     }
     
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    func changeInfoLabel(with placemark : CLPlacemark) {
+        let name = placemark.name ?? ""
+        let desc = placemark.description
         
+        self.infoLabel.text = "\(name) : \(desc)"
+    }
+    
+    // MARK: - Action
+    @IBAction func locationDataProviderAction(_ sender: LocationDataProvider) {
+        
+        guard let coord = sender.coordinate else{
+            return
+        }
+        self.showMyRegion(currentLocation: coord)
+    }
+    
+    // MARK: - Private
+    
+    private func showMyRegion(currentLocation:CLLocationCoordinate2D){
+        let span = MKCoordinateSpan(latitudeDelta: 0.005, longitudeDelta: 0.005)
+        let region = MKCoordinateRegion(center: currentLocation, span: span)
+        self.mapView.setRegion(region, animated: true)
     }
 
 }

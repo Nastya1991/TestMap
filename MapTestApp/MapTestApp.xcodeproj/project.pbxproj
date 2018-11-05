@@ -12,8 +12,11 @@
 		4E2CBC3B218EFA8A00F1A9B6 /* SettingsMapTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2CBC3A218EFA8A00F1A9B6 /* SettingsMapTableViewController.swift */; };
 		4E2CBC3D218EFD4200F1A9B6 /* SettingsMapTableViewController_UITableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2CBC3C218EFD4200F1A9B6 /* SettingsMapTableViewController_UITableViewDataSource.swift */; };
 		4E2CBC3F218EFE2B00F1A9B6 /* SettingsMapTableViewController_Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2CBC3E218EFE2B00F1A9B6 /* SettingsMapTableViewController_Enum.swift */; };
-		4E4EE7DE2190DC7100414309 /* MapOSM.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E4EE7DD2190DC7100414309 /* MapOSM.storyboard */; };
-		4E4EE7E02190DCB600414309 /* OSMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4EE7DF2190DCB600414309 /* OSMViewController.swift */; };
+		4E4EE7ED2190F37C00414309 /* MapOSM.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E4EE7EB2190F37C00414309 /* MapOSM.storyboard */; };
+		4E4EE7F52190F42B00414309 /* MapAppleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4EE7F02190F42B00414309 /* MapAppleViewController.swift */; };
+		4E4EE7F62190F42B00414309 /* OSMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4EE7F22190F42B00414309 /* OSMViewController.swift */; };
+		4E4EE7F72190F42B00414309 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4EE7F32190F42B00414309 /* MapViewController.swift */; };
+		4E4EE7F82190F42B00414309 /* MapViewController_MapDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4EE7F42190F42B00414309 /* MapViewController_MapDelegate.swift */; };
 		4E53E24F218F833B00BC8C7F /* ChooseValueView_Picker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E53E24E218F833B00BC8C7F /* ChooseValueView_Picker.swift */; };
 		4E53E251218F834D00BC8C7F /* ChooseValueView_Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E53E250218F834D00BC8C7F /* ChooseValueView_Protocol.swift */; };
 		4E53E253218F854800BC8C7F /* SettingsMapViewController_Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E53E252218F854800BC8C7F /* SettingsMapViewController_Delegate.swift */; };
@@ -21,8 +24,6 @@
 		4E53E258218F8DC000BC8C7F /* ChooseValueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E53E256218F8DC000BC8C7F /* ChooseValueView.swift */; };
 		4E53E259218F8DC000BC8C7F /* ChooseValueView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E53E257218F8DC000BC8C7F /* ChooseValueView.xib */; };
 		4E53E25B218F92E200BC8C7F /* Defaults_String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E53E25A218F92E200BC8C7F /* Defaults_String.swift */; };
-		4E745EFD218E3D3F006CEEF7 /* MapAppleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E745EFC218E3D3F006CEEF7 /* MapAppleViewController.swift */; };
-		4E745EFF218E3E5D006CEEF7 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E745EFE218E3E5D006CEEF7 /* MapViewController.swift */; };
 		4E745F01218E40D1006CEEF7 /* MainNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E745F00218E40D1006CEEF7 /* MainNavigationViewController.swift */; };
 		4E745F03218E414A006CEEF7 /* MapProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E745F02218E414A006CEEF7 /* MapProvider.swift */; };
 		4EA92682218E2EF600333102 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA92681218E2EF600333102 /* AppDelegate.swift */; };
@@ -83,8 +84,11 @@
 		4E2CBC3A218EFA8A00F1A9B6 /* SettingsMapTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsMapTableViewController.swift; sourceTree = "<group>"; };
 		4E2CBC3C218EFD4200F1A9B6 /* SettingsMapTableViewController_UITableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsMapTableViewController_UITableViewDataSource.swift; sourceTree = "<group>"; };
 		4E2CBC3E218EFE2B00F1A9B6 /* SettingsMapTableViewController_Enum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsMapTableViewController_Enum.swift; sourceTree = "<group>"; };
-		4E4EE7DD2190DC7100414309 /* MapOSM.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MapOSM.storyboard; sourceTree = "<group>"; };
-		4E4EE7DF2190DCB600414309 /* OSMViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = OSMViewController.swift; path = OSM/OSMViewController.swift; sourceTree = "<group>"; };
+		4E4EE7EC2190F37C00414309 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = MapTestApp/Base.lproj/MapOSM.storyboard; sourceTree = SOURCE_ROOT; };
+		4E4EE7F02190F42B00414309 /* MapAppleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapAppleViewController.swift; sourceTree = "<group>"; };
+		4E4EE7F22190F42B00414309 /* OSMViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSMViewController.swift; sourceTree = "<group>"; };
+		4E4EE7F32190F42B00414309 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		4E4EE7F42190F42B00414309 /* MapViewController_MapDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController_MapDelegate.swift; sourceTree = "<group>"; };
 		4E53E24E218F833B00BC8C7F /* ChooseValueView_Picker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseValueView_Picker.swift; sourceTree = "<group>"; };
 		4E53E250218F834D00BC8C7F /* ChooseValueView_Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseValueView_Protocol.swift; sourceTree = "<group>"; };
 		4E53E252218F854800BC8C7F /* SettingsMapViewController_Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsMapViewController_Delegate.swift; sourceTree = "<group>"; };
@@ -92,8 +96,6 @@
 		4E53E256218F8DC000BC8C7F /* ChooseValueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseValueView.swift; sourceTree = "<group>"; };
 		4E53E257218F8DC000BC8C7F /* ChooseValueView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChooseValueView.xib; sourceTree = "<group>"; };
 		4E53E25A218F92E200BC8C7F /* Defaults_String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Defaults_String.swift; sourceTree = "<group>"; };
-		4E745EFC218E3D3F006CEEF7 /* MapAppleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapAppleViewController.swift; sourceTree = "<group>"; };
-		4E745EFE218E3E5D006CEEF7 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		4E745F00218E40D1006CEEF7 /* MainNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationViewController.swift; sourceTree = "<group>"; };
 		4E745F02218E414A006CEEF7 /* MapProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapProvider.swift; sourceTree = "<group>"; };
 		4EA9267E218E2EF600333102 /* MapTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -192,6 +194,33 @@
 			path = SettingsMap;
 			sourceTree = "<group>";
 		};
+		4E4EE7EE2190F42B00414309 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				4E4EE7EF2190F42B00414309 /* Apple */,
+				4E4EE7F12190F42B00414309 /* OSM */,
+				4E4EE7F32190F42B00414309 /* MapViewController.swift */,
+				4E4EE7F42190F42B00414309 /* MapViewController_MapDelegate.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		4E4EE7EF2190F42B00414309 /* Apple */ = {
+			isa = PBXGroup;
+			children = (
+				4E4EE7F02190F42B00414309 /* MapAppleViewController.swift */,
+			);
+			path = Apple;
+			sourceTree = "<group>";
+		};
+		4E4EE7F12190F42B00414309 /* OSM */ = {
+			isa = PBXGroup;
+			children = (
+				4E4EE7F22190F42B00414309 /* OSMViewController.swift */,
+			);
+			path = OSM;
+			sourceTree = "<group>";
+		};
 		4E53E249218F82C600BC8C7F /* ChooseView */ = {
 			isa = PBXGroup;
 			children = (
@@ -201,14 +230,6 @@
 				4E53E257218F8DC000BC8C7F /* ChooseValueView.xib */,
 			);
 			path = ChooseView;
-			sourceTree = "<group>";
-		};
-		4E745EFB218E3D3F006CEEF7 /* Apple */ = {
-			isa = PBXGroup;
-			children = (
-				4E745EFC218E3D3F006CEEF7 /* MapAppleViewController.swift */,
-			);
-			path = Apple;
 			sourceTree = "<group>";
 		};
 		4EA92675218E2EF600333102 = {
@@ -266,8 +287,8 @@
 		4EA926E2218E2FEE00333102 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				4E4EE7EB2190F37C00414309 /* MapOSM.storyboard */,
 				4EA926E5218E300D00333102 /* LaunchScreen.storyboard */,
-				4E4EE7DD2190DC7100414309 /* MapOSM.storyboard */,
 				4EA92720218E318A00333102 /* Main.storyboard */,
 				4EA9271C218E317B00333102 /* MainTabBar.storyboard */,
 				4EA9271A218E317B00333102 /* Pager.storyboard */,
@@ -325,8 +346,8 @@
 				4EA9272E218E34D100333102 /* BaseController */,
 				4EA92735218E34D100333102 /* Tutorial */,
 				4EA9273D218E34D100333102 /* Welcome */,
+				4E4EE7EE2190F42B00414309 /* Map */,
 				4EA92740218E34D100333102 /* NavFlow */,
-				4EA92742218E34D100333102 /* Map */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -361,16 +382,6 @@
 				4E745F00218E40D1006CEEF7 /* MainNavigationViewController.swift */,
 			);
 			path = NavFlow;
-			sourceTree = "<group>";
-		};
-		4EA92742218E34D100333102 /* Map */ = {
-			isa = PBXGroup;
-			children = (
-				4E745EFE218E3E5D006CEEF7 /* MapViewController.swift */,
-				4E745EFB218E3D3F006CEEF7 /* Apple */,
-				4E4EE7DF2190DCB600414309 /* OSMViewController.swift */,
-			);
-			path = Map;
 			sourceTree = "<group>";
 		};
 		4EA92744218E34D100333102 /* Workflow */ = {
@@ -529,10 +540,10 @@
 				4EA926E8218E300D00333102 /* LaunchScreen.storyboard in Resources */,
 				4EA92722218E318A00333102 /* Main.storyboard in Resources */,
 				4E2CBC33218EF98B00F1A9B6 /* Settings.storyboard in Resources */,
-				4E4EE7DE2190DC7100414309 /* MapOSM.storyboard in Resources */,
 				4EA9271F218E317B00333102 /* MainTabBar.storyboard in Resources */,
 				4EA92689218E2EF700333102 /* Assets.xcassets in Resources */,
 				4EA9271E218E317B00333102 /* Pager.storyboard in Resources */,
+				4E4EE7ED2190F37C00414309 /* MapOSM.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -583,22 +594,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				4EA9274C218E34D100333102 /* BaseViewController.swift in Sources */,
+				4E4EE7F62190F42B00414309 /* OSMViewController.swift in Sources */,
 				4E2CBC3B218EFA8A00F1A9B6 /* SettingsMapTableViewController.swift in Sources */,
-				4E745EFD218E3D3F006CEEF7 /* MapAppleViewController.swift in Sources */,
 				4EA92757218E34D100333102 /* WelcomeViewController.swift in Sources */,
 				4EA9274F218E34D100333102 /* Defaults.swift in Sources */,
 				4EA92759218E34D100333102 /* MainTabBarViewController.swift in Sources */,
 				4EA9274E218E34D100333102 /* Defaults_Color.swift in Sources */,
+				4E4EE7F72190F42B00414309 /* MapViewController.swift in Sources */,
 				4EA92758218E34D100333102 /* WelcomeViewController_Enums.swift in Sources */,
-				4E4EE7E02190DCB600414309 /* OSMViewController.swift in Sources */,
 				4E53E255218F87E400BC8C7F /* ViewExtension.swift in Sources */,
 				4EA9274B218E34D100333102 /* StringExtension.swift in Sources */,
 				4EA92751218E34D100333102 /* TutorialPageViewController+Delegate.swift in Sources */,
+				4E4EE7F52190F42B00414309 /* MapAppleViewController.swift in Sources */,
 				4EA92754218E34D100333102 /* FourthViewController.swift in Sources */,
 				4E53E253218F854800BC8C7F /* SettingsMapViewController_Delegate.swift in Sources */,
 				4EA9274D218E34D100333102 /* Defaults_Storyboard.swift in Sources */,
 				4E2CBC39218EF9F000F1A9B6 /* SettingsMapViewController.swift in Sources */,
 				4EA92750218E34D100333102 /* TutorialPageViewController.swift in Sources */,
+				4E4EE7F82190F42B00414309 /* MapViewController_MapDelegate.swift in Sources */,
 				4E2CBC3F218EFE2B00F1A9B6 /* SettingsMapTableViewController_Enum.swift in Sources */,
 				4EA9274A218E34D100333102 /* ColorExtension.swift in Sources */,
 				4EA92749218E34D100333102 /* ViewControllerExtension.swift in Sources */,
@@ -614,7 +627,6 @@
 				4EA92756218E34D100333102 /* TutorialViewController+TutorialPageViewControllerDelegate.swift in Sources */,
 				4E53E24F218F833B00BC8C7F /* ChooseValueView_Picker.swift in Sources */,
 				4E745F01218E40D1006CEEF7 /* MainNavigationViewController.swift in Sources */,
-				4E745EFF218E3E5D006CEEF7 /* MapViewController.swift in Sources */,
 				4EA92752218E34D100333102 /* TutorialPageViewController+UIPageViewControllerDataSource.swift in Sources */,
 				4EA92753218E34D100333102 /* TutorialViewController.swift in Sources */,
 				4EA92762218E359F00333102 /* LocationDataProvider.swift in Sources */,
@@ -661,6 +673,14 @@
 				4E2CBC32218EF98B00F1A9B6 /* Base */,
 			);
 			name = Settings.storyboard;
+			sourceTree = "<group>";
+		};
+		4E4EE7EB2190F37C00414309 /* MapOSM.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4E4EE7EC2190F37C00414309 /* Base */,
+			);
+			name = MapOSM.storyboard;
 			sourceTree = "<group>";
 		};
 		4EA926E5218E300D00333102 /* LaunchScreen.storyboard */ = {

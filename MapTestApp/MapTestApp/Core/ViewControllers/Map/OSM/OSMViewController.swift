@@ -9,17 +9,21 @@
 import UIKit
 import MapKit
 
-class OSMViewController: BaseViewController,MKMapViewDelegate {
+class OSMViewController: MapViewController {
     
-    @IBOutlet weak var mapView: MKMapView!
     var tileRenderer: MKTileOverlayRenderer!
-    
-    @IBOutlet var locationDataProvider: LocationDataProvider!
+
     
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        
+        self.setupOSM()
+        self.mapView.delegate = self
+
+    }
+
+
+    private func setupOSM(){
         let template = "https://tile.openstreetmap.org/{z}/{x}/{y}.png"
         
         let overlay = MKTileOverlay(urlTemplate: template)
@@ -29,31 +33,12 @@ class OSMViewController: BaseViewController,MKMapViewDelegate {
         self.tileRenderer = MKTileOverlayRenderer(tileOverlay: overlay)
         
         self.locationDataProvider.request()
-        self.mapView.delegate = self
-    }
-    
-    // MARK: - Action
-    @IBAction func locationDataProviderAction(_ sender: LocationDataProvider) {
-        
-        guard let coord = sender.coordinate else{
-            return
-        }
-        self.showMyRegion(currentLocation: coord)
-        
-    }
-    
-    func showMyRegion(currentLocation:CLLocationCoordinate2D){
-        let span = MKCoordinateSpan(latitudeDelta: 0.005, longitudeDelta: 0.005)
-        let region = MKCoordinateRegion(center: currentLocation, span: span)
-        self.mapView.setRegion(region, animated: true)
-        self.mapView.showsUserLocation = true
-
     }
     
     func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
         return self.tileRenderer
     }
-    
+
 }
 
 extension OSMViewController
@@ -62,3 +47,4 @@ extension OSMViewController
         return self.controllerFromStoryboard(controllerClass: self, from: .MapOSM)
     }
 }
+

@@ -36,20 +36,33 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="0kb-zH-Y9R">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <rect key="frame" x="0.0" y="120" width="375" height="547"/>
                             </mapView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8qw-t3-Yw0">
+                                <rect key="frame" x="25" y="20" width="325" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="ERX-He-AxQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="iWS-lS-jvG" firstAttribute="trailing" secondItem="8qw-t3-Yw0" secondAttribute="trailing" constant="25" id="AFj-B1-tnB"/>
+                            <constraint firstItem="8qw-t3-Yw0" firstAttribute="top" secondItem="n2T-ku-Qy1" secondAttribute="bottom" id="HV8-zf-yku"/>
                             <constraint firstItem="0kb-zH-Y9R" firstAttribute="leading" secondItem="ebR-kZ-vBJ" secondAttribute="leading" id="VC7-z6-KAW"/>
                             <constraint firstAttribute="trailing" secondItem="0kb-zH-Y9R" secondAttribute="trailing" id="VTI-bt-BYH"/>
-                            <constraint firstItem="4x6-Lh-e8x" firstAttribute="top" secondItem="0kb-zH-Y9R" secondAttribute="bottom" id="XK8-Zr-WOB"/>
-                            <constraint firstItem="0kb-zH-Y9R" firstAttribute="top" secondItem="n2T-ku-Qy1" secondAttribute="bottom" id="f3J-aw-cL8"/>
+                            <constraint firstItem="4x6-Lh-e8x" firstAttribute="top" secondItem="0kb-zH-Y9R" secondAttribute="bottom" id="bH4-mR-E4d"/>
+                            <constraint firstItem="0kb-zH-Y9R" firstAttribute="top" secondItem="8qw-t3-Yw0" secondAttribute="bottom" id="eyD-EI-K41"/>
+                            <constraint firstItem="8qw-t3-Yw0" firstAttribute="leading" secondItem="iWS-lS-jvG" secondAttribute="leading" constant="25" id="tTo-vS-8NN"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="iWS-lS-jvG"/>
                     </view>
                     <connections>
-                        <outlet property="locationDataProvider" destination="4ZC-eh-hM1" id="Xfp-kE-9q1"/>
+                        <outlet property="infoLabel" destination="8qw-t3-Yw0" id="5nF-re-ka0"/>
+                        <outlet property="locationDataProvider" destination="4ZC-eh-hM1" id="o8p-bx-fCO"/>
                         <outlet property="mapView" destination="0kb-zH-Y9R" id="t0i-E4-9wh"/>
                     </connections>
                 </viewController>
@@ -60,7 +73,7 @@
                     </connections>
                 </customObject>
             </objects>
-            <point key="canvasLocation" x="-233" y="19"/>
+            <point key="canvasLocation" x="-234.40000000000001" y="18.440779610194905"/>
         </scene>
     </scenes>
 </document>
