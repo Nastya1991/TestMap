@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="b8K-FC-Ce9">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="4jm-cp-swV">
+            <objects>
+                <navigationController navigationBarHidden="YES" id="b8K-FC-Ce9" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="y6J-ev-iWB">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="KXH-n2-eKW" kind="relationship" relationship="rootViewController" id="kIB-Nx-dJl"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RLx-rR-qAS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-689" y="134"/>
+        </scene>
+        <!--Welcome View Controller-->
+        <scene sceneID="Oh9-RW-FXF">
+            <objects>
+                <viewController id="KXH-n2-eKW" customClass="WelcomeViewController" customModule="BLEExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="DWe-d5-4ex"/>
+                        <viewControllerLayoutGuide type="bottom" id="aKb-kj-z93"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="UsO-Sp-Ejj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="D6H-I7-C2C"/>
+                    <connections>
+                        <segue destination="Qpp-6A-8Bi" kind="show" identifier="pagerSegue" id="95M-TF-4nZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TNb-9i-avS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="261.60000000000002" y="111.99400299850076"/>
+        </scene>
+        <!--Pager-->
+        <scene sceneID="ySX-a0-YFg">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="pager" storyboardName="Pager" id="Qpp-6A-8Bi" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cam-56-wHp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="868" y="95"/>
+        </scene>
+    </scenes>
+</document>

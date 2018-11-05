@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChooseValueView" customModule="MapTestApp" customModuleProvider="target">
+            <connections>
+                <outlet property="backgroundImageView" destination="zoO-rG-0JR" id="Fdb-0a-ajP"/>
+                <outlet property="darkMask" destination="zfA-HL-XFj" id="1Pe-Wa-ThU"/>
+                <outlet property="picker" destination="TAM-3l-a8f" id="cVv-nH-KDn"/>
+                <outlet property="pickerView" destination="OQ8-Lp-NF4" id="4BE-HY-p4C"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="IPh-KN-x5W">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="76b-zd-Kkh">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zoO-rG-0JR">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <view hidden="YES" alpha="0.20000000298023224" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zfA-HL-XFj" userLabel="dark mask">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OQ8-Lp-NF4">
+                    <rect key="frame" x="0.0" y="407" width="375" height="260"/>
+                    <subviews>
+                        <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TAM-3l-a8f">
+                            <rect key="frame" x="0.0" y="44" width="375" height="216"/>
+                        </pickerView>
+                        <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g6K-tI-XEg">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                            <items>
+                                <barButtonItem style="plain" systemItem="flexibleSpace" id="fq3-M3-BYS"/>
+                                <barButtonItem title="Done" width="79" id="NFg-9R-RLX">
+                                    <color key="tintColor" red="0.50045281649999995" green="0.50847518439999995" blue="0.51695394520000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <connections>
+                                        <action selector="chooseValuePressed:" destination="-1" id="rSX-js-3g4"/>
+                                    </connections>
+                                </barButtonItem>
+                            </items>
+                        </toolbar>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="TAM-3l-a8f" firstAttribute="leading" secondItem="OQ8-Lp-NF4" secondAttribute="leading" id="1he-cf-yGf"/>
+                        <constraint firstAttribute="trailing" secondItem="TAM-3l-a8f" secondAttribute="trailing" id="M5I-y2-q9u"/>
+                        <constraint firstAttribute="bottom" secondItem="TAM-3l-a8f" secondAttribute="bottom" id="U41-BF-18D"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="260" id="Uh7-Lt-tfa"/>
+                        <constraint firstAttribute="height" constant="260" id="WjT-xZ-eJS"/>
+                        <constraint firstItem="g6K-tI-XEg" firstAttribute="leading" secondItem="OQ8-Lp-NF4" secondAttribute="leading" id="dV0-8O-ifU"/>
+                        <constraint firstItem="g6K-tI-XEg" firstAttribute="top" secondItem="OQ8-Lp-NF4" secondAttribute="top" id="eb0-fK-0g5"/>
+                        <constraint firstAttribute="trailing" secondItem="g6K-tI-XEg" secondAttribute="trailing" id="n5Q-Tk-cHG"/>
+                        <constraint firstItem="TAM-3l-a8f" firstAttribute="top" secondItem="g6K-tI-XEg" secondAttribute="bottom" id="wuP-ds-Wdg"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="zfA-HL-XFj" firstAttribute="top" secondItem="IPh-KN-x5W" secondAttribute="top" id="0pr-15-OgC"/>
+                <constraint firstItem="zoO-rG-0JR" firstAttribute="trailing" secondItem="e0C-7A-cPT" secondAttribute="trailing" id="2P9-9T-Feq"/>
+                <constraint firstItem="OQ8-Lp-NF4" firstAttribute="leading" secondItem="e0C-7A-cPT" secondAttribute="leading" id="DVr-lr-fox"/>
+                <constraint firstItem="zoO-rG-0JR" firstAttribute="leading" secondItem="e0C-7A-cPT" secondAttribute="leading" id="L0j-lj-uaq"/>
+                <constraint firstItem="zoO-rG-0JR" firstAttribute="bottom" secondItem="e0C-7A-cPT" secondAttribute="bottom" id="RKp-H0-L9e"/>
+                <constraint firstItem="zfA-HL-XFj" firstAttribute="trailing" secondItem="e0C-7A-cPT" secondAttribute="trailing" id="bJg-F5-bIS"/>
+                <constraint firstItem="e0C-7A-cPT" firstAttribute="bottom" secondItem="OQ8-Lp-NF4" secondAttribute="bottom" id="bkz-vy-H2Q"/>
+                <constraint firstItem="OQ8-Lp-NF4" firstAttribute="trailing" secondItem="e0C-7A-cPT" secondAttribute="trailing" id="jHC-Tf-lWW"/>
+                <constraint firstItem="zfA-HL-XFj" firstAttribute="bottom" secondItem="e0C-7A-cPT" secondAttribute="bottom" id="lDI-mh-mNb"/>
+                <constraint firstItem="zoO-rG-0JR" firstAttribute="top" secondItem="IPh-KN-x5W" secondAttribute="top" id="lvL-yn-Yz8"/>
+                <constraint firstItem="zfA-HL-XFj" firstAttribute="leading" secondItem="e0C-7A-cPT" secondAttribute="leading" id="pLV-W8-Y2J"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="e0C-7A-cPT"/>
+        </view>
+    </objects>
+</document>

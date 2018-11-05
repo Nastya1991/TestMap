@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="xAK-3F-sn9">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main Navigation View Controller-->
+        <scene sceneID="gen-bO-7FE">
+            <objects>
+                <navigationController id="xAK-3F-sn9" customClass="MainNavigationViewController" customModule="MapTestApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Foc-F9-6tC">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IAy-Eh-0mC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1007" y="18"/>
+        </scene>
+        <!--Map Apple View Controller-->
+        <scene sceneID="8hK-KP-csJ">
+            <objects>
+                <viewController storyboardIdentifier="MapAppleViewController" id="m6W-5m-Fn9" customClass="MapAppleViewController" customModule="MapTestApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rVx-6N-7XZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="iJU-2a-DWQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Bk6-su-9WH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="4yY-WC-Lqb">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="4yY-WC-Lqb" firstAttribute="top" secondItem="rVx-6N-7XZ" secondAttribute="bottom" id="E3z-3z-Ujr"/>
+                            <constraint firstItem="iJU-2a-DWQ" firstAttribute="top" secondItem="4yY-WC-Lqb" secondAttribute="bottom" id="Ef0-NW-4Wg"/>
+                            <constraint firstAttribute="trailing" secondItem="4yY-WC-Lqb" secondAttribute="trailing" id="bRh-yO-HI8"/>
+                            <constraint firstItem="4yY-WC-Lqb" firstAttribute="leading" secondItem="Bk6-su-9WH" secondAttribute="leading" id="kPP-kZ-TDA"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="locationDataProvider" destination="X1p-0W-IYM" id="6N8-xH-Xlv"/>
+                        <outlet property="mapView" destination="4yY-WC-Lqb" id="nWh-67-jjK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mkt-nY-Pc8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="X1p-0W-IYM" customClass="LocationDataProvider" customModule="MapTestApp" customModuleProvider="target">
+                    <connections>
+                        <action selector="locationDataProviderAction:" destination="m6W-5m-Fn9" eventType="valueChanged" id="38Y-uD-QDB"/>
+                    </connections>
+                </customObject>
+            </objects>
+            <point key="canvasLocation" x="-233" y="19"/>
+        </scene>
+    </scenes>
+</document>
